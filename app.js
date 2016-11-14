@@ -26,6 +26,10 @@ bot.on('message', message => {
 
    if (command === "ping") {
       return;
+   } else if (command == "generateinvite") {
+      let guild = author.user.guild;
+      message.channel.sendMessage('Guild ${guild} invite created :');
+      guild.createInvite();
    } else if (command == "say") {
       message.channel.sendMessage(args.join(" "));
    } else if (command == "add") {
