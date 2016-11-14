@@ -45,4 +45,4 @@ bot.on('message', message => {
    }
 });
 
-bot.login("MjQ3NDY5OTg4OTEzNDc5Njkw.Cwpp5w.hnMuz8EiDF3vGwrovH63XKx59P0")
+bot.login(bot_password)
